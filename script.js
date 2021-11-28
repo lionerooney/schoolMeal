@@ -2,8 +2,8 @@
 
 
 // CONST DATA
-const API_KEY = 'e223e6193d444423abdba3ffbccf4d62';
-const KAKAOTALK_KEY = "7c0de169fa46c79103dc7e6e0347fbe1";
+const API_KEY = "MY API";
+const KAKAOTALK_KEY = "MY API";
 
 let schoolMealData = {
   
