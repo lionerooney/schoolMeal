@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K급식</title>
+    <link href="sunfish-icon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+    <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  </head>
+  <body>
+    <div class="container-loading">
+      <div class="loading loading--full--height"></div>
+    </div>
+
+    <!-- input data -->
+    <input type="hidden" class="cityProvince">
+    <input type="hidden" class="schoolName">
+    <input type="hidden" class="schoolCode">
+
+    <!-- container -->
+    <div class="container">
+      <div class="container-header">
+        <div class="selectedSchoolInfo openModalBtn">
+          학교 검색
+        </div>
+      </div>
+
+      <div class="container-body">
+        <div class="mealHeader">
+          <!-- meal Date info -->
+          <div class="mealDate">
+            <button class="meal-leftBtn">
+              <i class="fa fa-arrow-left"></i>
+            </button>
+            <div class="meal-dateInfo">
+              <input type="date" value="2017-06-01" class="date">
+            </div>
+            <button class="meal-rightBtn">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- kakaotalk share function -->
+          <button class="shareLink">
+            <i class="fa fa-share-alt"></i>
+          </button>
+        </div>
+
+        <div class="mealInfo">
+          
+        </div>
+        <div class="mealNone">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- modal part -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button class="closeModalBtn" id="modal-btn">
+            <i class="fa fa-close"></i>
+          </button>
+          <div class="searchSchool-input">
+            <select class="input-cityProvince select" id="select">
+              <option value="B10">서울특별시</option>
+              <option value="C10">부산광역시</option>
+              <option value="D10">대구광역시</option>
+              <option value="E10">인천광역시</option>
+              <option value="F10">광주광역시</option>
+              <option value="G10">대전광역시</option>
+              <option value="H10">울산광역시</option>
+              <option value="I10">세종특별자치시</option>
+              <option value="J10">경기도</option>
+              <option value="K10">강원도</option>
+              <option value="M10">충청북도</option>
+              <option value="N10">충청남도</option>
+              <option value="P10">전라북도</option>
+              <option value="Q10">전라남도</option>
+              <option value="R10">경상북도</option>
+              <option value="S10">경상남도</option>
+              <option value="T10">제주특별자치도</option>
+              <option value="V10">재외한국학교</option>
+            </select>
+            <input class="input-schoolName" id="input" type="text" placeholder="학교 이름">
+            <button class="input-searchSchool" id="modal-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="schoolList">
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
